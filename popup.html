@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LeetCode AI Mentor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    width:380px;
+    min-height:500px;
+    padding:18px;
+
+    background:#011032;
+
+    color:#f9fafb;
+
+    position:relative;
+    overflow:hidden;
+}
+body::before{
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    top:-80px;
+    right:-80px;
+
+    background:#2563eb;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:0.35;
+
+    z-index:0;
+}
+
+body::after{
+    content:"";
+
+    position:absolute;
+
+    width:200px;
+    height:200px;
+
+    bottom:-60px;
+    left:-60px;
+
+    background:#3b82f6;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+    opacity:0.25;
+
+    z-index:0;
+}
+
+
+.container{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.header{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.title{
+    font-size:20px;
+    font-weight:600;
+}
+
+.subtitle{
+    font-size:13px;
+    color:#9ca3af;
+}
+
+.card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(30px);
+
+    border-radius:16px;
+    padding:16px;
+}
+
+.problem-name{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:12px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#2563eb;
+    color:white;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:0.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#result{
+    margin-top:16px;
+    padding:16px;
+
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.08);
+    border-radius:14px;
+
+    font-size:14px;
+    font-weight:500;
+
+    line-height:1.8;
+
+    color:#f5f5f5;
+
+    white-space:pre-wrap;
+
+    max-height:400px;
+    overflow-y:auto;
+}
+
+.footer{
+    text-align:center;
+    font-size:12px;
+    color:#6b7280;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div class="title">
+            LeetCode AI Mentor
+        </div>
+
+        <div class="subtitle">
+            Analyze your solution and get guided feedback
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="problem-name" id="problem-name">
+            Problem Not Detected
+        </div>
+
+        <button id="analyzeBtn">
+            Analyze Solution
+        </button>
+    </div>
+
+    <div class="result" id="result">
+        Waiting for analysis...
+    </div>
+
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>
