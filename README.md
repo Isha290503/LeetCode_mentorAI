@@ -81,21 +81,19 @@ LeetCode Page
 
 ### Extension Popup
 
-Add screenshot here.
+
 
 <img width="1902" height="956" alt="image" src="https://github.com/user-attachments/assets/d7485dc4-de57-4792-b550-71a5eae97505" />
 
 
 ### Analysis Example
 
-Add screenshot here.
 
 <img width="1898" height="917" alt="image" src="https://github.com/user-attachments/assets/367b48d7-ff89-4d6e-ad33-39235dfd5391" />
 
 
 ### Settings Page
 
-Add screenshot here.
 
 <img width="1900" height="875" alt="image" src="https://github.com/user-attachments/assets/9f43839e-6f98-40f8-8238-c81b0e6b20c7" />
 
