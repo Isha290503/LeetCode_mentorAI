@@ -115,4 +115,4 @@ Add screenshot here.
 
 ## Author
 
-Isha Chhoda
+Isha
