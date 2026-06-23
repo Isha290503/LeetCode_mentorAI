@@ -90,7 +90,8 @@ Add screenshot here.
 
 Add screenshot here.
 
-![Analysis Screenshot](screenshots/analysis.png)
+<img width="1898" height="917" alt="image" src="https://github.com/user-attachments/assets/367b48d7-ff89-4d6e-ad33-39235dfd5391" />
+
 
 ### Settings Page
 
